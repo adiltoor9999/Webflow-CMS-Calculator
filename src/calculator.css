@@ -1,0 +1,559 @@
+@import url("https://use.typekit.net/ovt6ynt.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#0059ff, #e0e0e0);
+}
+
+.title {
+  text-align: center;
+  padding: 50px 0px 25px 0;
+  font-size: 44px;
+  font-weight: 600;
+  color: #21222c;
+  font-family: "Playfair Display SC";
+}
+
+.header {
+  text-align: center!important;
+  padding: 20px!important;
+  background: hsl(232deg 16% 15%)!important;
+  color: #fff!important;
+  border-bottom: 2px solid #3b3d3f!important;
+  position: relative!important;
+  z-index: 1;
+  width: 100%!important;
+}
+
+.header h3 {
+  font-size: 3rem!important;
+  margin: 0;
+  color: white;
+  /* font-family: "poppins", sans-serif; */
+}
+
+.wrapper {
+  background-color: #f6f8ff;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 90vh;
+  background: transparent;
+  opacity: 1;
+ 
+}
+
+label {
+  color: white !important;
+}
+
+.wrapperPre {
+  background-size: cover !important;
+  background: url(https://images.unsplash.com/photo-1523633589114-88eaf4b4f1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80);
+  background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2896&q=80);
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  opacity: 0.75;
+  background: url(https://assets.codepen.io/4927073/mybg.jpg);
+}
+
+.wrapper .line {
+  width: 50%;
+  margin: 25px auto 0 auto;
+  height: 1px;
+  background-color: #c3d2e3;
+}
+
+.container {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+  padding: 10px 0px;
+  text-align: center;
+  margin: auto;
+}
+
+.container .card {
+  max-width: 80rem;
+  min-height: 100%!important;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  z-index: 4 !important;
+  position: relative;
+  background: linear-gradient(#141e30, #243b55);
+  background: #16181a;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 18% 8%);
+}
+
+.tabs {
+  text-align: left;
+  position: relative;
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+
+.tabs input + label:hover {
+  color: #fdfdfd;
+}
+
+.tabs .tabsShadow {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 25px 0 rgba(248, 243, 243, 0.04);
+  box-sizing: border-box;
+  position: absolute;
+  height: 35px;
+  z-index: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.content .item {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  padding: 40px 20px;
+  
+}
+
+#tab-1:checked + label {
+  background: hsl(0, 0%, 93%);
+  color: black!important;
+}
+
+#tab-2:checked + label {
+  background: hsl(0, 0%, 93%);
+  color: black!important;
+}
+
+#tab-3:checked + label {
+  background: hsl(0, 0%, 93%);
+  color: black!important;
+}
+
+#tab-4:checked + label {
+  background: hsl(0, 0%, 93%);
+  color: black!important;
+}
+
+#tab-1:checked ~ section #content-1,
+#tab-2:checked ~ section #content-2,
+#tab-3:checked ~ section #content-3,
+#tab-4:checked ~ section #content-4 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tabs input + label {
+  margin: 12px 8px;
+  width: 15%;
+  transition: all 0.3s;
+  text-align: center;
+  border: none;
+  border-bottom: 0.5pt solid #1d1e22;
+  color: #e7e9f5;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  padding: 5pt 10pt;
+  vertical-align: top;
+  justify-content: flex-start;
+  background: hsl(232deg 6% 17%);
+  margin-bottom: 0.5px;
+  border-radius: 7px 7px 0 0 !important;
+  border-top: 1px solid #3b3d3f;
+  letter-spacing: 0.1666666667em !important;
+  font-family: "antique-olive" !important;
+  cursor: pointer;
+}
+
+.tabs input:checked + label {
+  color: #fff; /* Text color for selected tab */
+}
+
+.content {
+  overflow: auto!important;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 20px;
+  height: 40vh;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  display: block;
+  padding: 1.25rem;
+  z-index: 2;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 16% 15%);
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.content p {
+  margin: 10px 15px 10px 0;
+  letter-spacing: 0.75px;
+  font-size: 14pt;
+  font-style: normal;
+  color: #f0f2fc;
+  line-height: 30px;
+  margin-top: 10pt;
+  font-family: "freight-display-pro";
+  font-weight: 300 !important;
+}
+
+h2.tab-title.tab-warning,
+h2.tab-title.tab-success,
+h2.tab-title.tab-primary,
+h2.tab-title.tab-default {
+  display: inline-flex;
+  color: #fff;
+  background-position: bottom center;
+  margin-bottom: 0pt !important;
+  margin-top: 6pt;
+  /* height: 22pt; */
+  text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+  letter-spacing: 0px;
+  font-family: "Manrope" !important;
+  font-weight: 800 !important;
+}
+
+h2.tab-title.tab-default {
+  background: linear-gradient(10deg, #f7ec9c, #ff8651);
+}
+
+h2.tab-title.tab-success {
+  background: linear-gradient(10deg, #02ce85, #02ceab);
+}
+
+h2.tab-title.tab-primary {
+  padding-bottom: 20px!important;
+  background: linear-gradient(
+    60deg,
+    hsl(202deg 100% 75%),
+    hsl(205deg 100% 64%),
+    hsl(230deg 100% 75%),
+    hsl(270deg 100% 72%)
+  );
+}
+
+h2.tab-title.tab-warning {
+  background: linear-gradient(70deg, #c51574, #97389b);
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+
+label.tab.tab-primary {
+  border-radius: 6pt 0 0 6pt;
+}
+
+label.tab.tab-warning {
+  border-radius: 0 6pt 6pt 0;
+}
+
+.tab-selector {
+  display: none;
+}
+
+.sr-only {
+  display: none;
+}
+
+
+
+
+span.numit {
+  font-size: 12pt;
+  font-family: "muli";
+  font-weight: 600;
+  text-shadow: 0.5px 0.5px 0.5px #e7e9f5;
+  color: #0e101a;
+  margin-right: 2px;
+  margin-left: -2px;
+  padding: 0;
+  color: aliceblue;
+  text-shadow: 0.5pt 0.5pt 0.5pt #2d3748;
+}
+/* Container for options */
+.Optionss {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+
+/* Label styling */
+.Optionss label {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  max-width: 300px; /* Adjust maximum width as needed */
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  border: 1px solid transparent; /* Default border color */
+}
+
+/* Background image container */
+.Optionss .bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 300px; /* Ensure width is specified correctly */
+  height: 200px; /* Ensure height is specified correctly */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth zoom and filter effect */
+}
+
+/* Overlay effect */
+.Optionss .bg-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  transition: opacity 0.3s ease; /* Smooth overlay transition */
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+/* Text styling inside the background image */
+.Optionss .bg-img span {
+  text-align: center;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+/* Hover effect for labels */
+.Optionss label:hover .bg-img {
+  transform: scale(1.03); /* Zoom effect on hover */
+}
+
+/* Remove overlay on hover */
+.Optionss label:hover .bg-img::before {
+  opacity: 0; /* Fade out overlay on hover */
+}
+
+/* Selected state styles */
+.Optionss label.selected {
+  border: 1px solid white; /* White border when selected */
+}
+
+.Optionss label.selected .bg-img {
+  transform: scale(1.05); /* Zoom effect when selected */
+  box-shadow: 0 0 10px white; /* White shadow */
+}
+
+.tab-selector {
+  display: none;
+}
+
+.Optionss label.selected .bg-img {
+  border: 3px solid #fffae6; /* Highlight border for selected */
+  transform: scale(1.05); /* Slight zoom effect for selected */
+}
+
+.Optionss .bg-img {
+  border: 1px solid transparent; /* Default border */
+}
+
+.Optionss label.checkbox-option {
+  position: relative;
+}
+
+.Optionss label.checkbox-option input[type="checkbox"]:checked + .bg-img {
+  border: 3px solid #ffcc00; /* Highlight border for selected */
+  transform: scale(1.05); /* Slight zoom effect for selected */
+}
+
+.next-button{
+ margin-top:20px!important ;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px!important;
+  background: none!important;
+  color: white!important;
+  position: relative!important;
+  outline: none!important;
+  border: none!important;
+  height: 50px!important;
+  width: 190px!important;
+  font-size: 14px!important;
+  z-index: 2;
+  transition: 0.01s 0.23s ease-out all!important;
+  overflow: hidden!important;
+}
+
+button:before {
+  content: ""!important;
+  position: absolute!important;
+  left: 0;
+  top: 0;
+  height: 100%!important;
+  width: 55%!important;
+  background: #303030!important;
+  z-index: -1;
+  transition: 0.3s ease-in all!important;
+}
+
+button:after {
+  content: "";
+  position: absolute!important;
+  left: -5%!important;
+  top: 5%!important;
+  height: 90%!important;
+  width: 5%!important;
+  background: white!important;
+  transition: 0.4s 0.02s ease-in all!important;
+}
+
+button:hover {
+  cursor: pointer!important;
+  color: transparent!important;
+}
+
+button:hover:before {
+  left: 120%!important;
+  width: 25%!important;
+}
+
+button:hover:after {
+  left: 100%!important;
+  width: 70%!important;
+}
+
+button:hover > .icon-right.after:after {
+  left: -80px!important;
+  color: white!important;
+  transition: 0.2s 0.2s ease all!important;
+}
+
+button:hover > .icon-right.after:before {
+  left: -104px!important;
+  top: 14px!important;
+  opacity: 0.2!important;
+  color: white!important;
+}
+
+.icon-right {
+  position: absolute!important;
+  top: 0!important;
+  right: 0!important;
+}
+
+.icon-right:after {
+  font-family: "FontAwesome"!important;
+  content: "→"!important;
+  font-size: 24px!important;
+  display: inline-block!important;
+  position: relative!important;
+  top: 26px!important;
+  transform: translate3D(0, -55%, 0)!important;
+}
+
+.icon-right.after:after {
+  left: -250px!important;
+  color: black!important;
+  transition: 0.15s 0.25s ease left, 0.5s 0.05s ease color!important;
+}
+
+.icon-right.after:before {
+  content: "Click Me!"!important;
+  position: absolute!important;
+  left: -230px!important;
+  top: 14px!important;
+  opacity: 0;
+  transition: 0.2s ease-in all!important;
+}
+
+.signature {
+  position: fixed!important;
+  font-family: sans-serif;
+  font-weight: 100;
+  bottom: 10px;
+  left: 0;
+  letter-spacing: 4px;
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none!important;
+}
+.next-button-container{
+  display: flex!important;
+  justify-content: center!important;
+}
+.btn{
+  max-width: 200px!important;
+}
+.order-summary {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white!important;
+  padding: 20px 50px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.order-summary h2 {
+  margin-top: 0;
+  color: white!important;
+}
+.order-summary strong{
+  color: white!important;
+}
+
+.services-prices {
+  margin: 10px 0;
+  color: white!important;
+}
+
+.services-prices p {
+  margin: 0;
+  color: white!important;
+}
+.container{
+  margin: 0!important;
+}
+
+.tabs{
+  overflow: auto;
+}
