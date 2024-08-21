@@ -21,6 +21,8 @@ app.get('/api/collection/:id/items', async (req, res) => {
         'Accept-Version': '1.0.0',
       },
     });
+
+    console.log('API response data:', response.data.items);
     res.json(response.data);
   } catch (error) {
     res.status(error.response.status).send(error.message);
